@@ -1,21 +1,8 @@
 import TSwipe from "@/components/TSwipe";
 import { Button } from "@/components/ui/button";
+import { images } from "@/lib/images";
 import Image from "next/image";
 import { FaFacebook, FaInstagram, FaTelegram } from "react-icons/fa6";
-
-export const images = [
-  "/thumbs/a.jpg",
-  "/thumbs/b.jpg",
-  "/thumbs/c.jpg",
-  "/thumbs/d.jpg",
-  "/thumbs/e.jpg",
-  "/thumbs/f.jpg",
-  "/thumbs/g.jpg",
-  "/thumbs/h.jpg",
-  "/thumbs/i.jpg",
-  "/thumbs/j.jpg",
-  "/thumbs/k.jpg",
-];
 
 export default function Home() {
   const socialLinks = [

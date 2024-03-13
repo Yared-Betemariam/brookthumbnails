@@ -6,9 +6,9 @@ import { useCallback, useState } from "react";
 import { IoChevronBackOutline } from "react-icons/io5";
 import { IoChevronForwardOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
-import { images } from "@/app/page";
 import { cn } from "@/lib/utils";
 import { Roboto } from "next/font/google";
+import { images } from "@/lib/images";
 
 const roboto = Roboto({
   subsets: ["latin"],
