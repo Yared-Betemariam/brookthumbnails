@@ -8,7 +8,6 @@ const Footer = () => {
       <div className="flex space-x-4 text-xl">
         <FaTelegram />
         <FaInstagram />
-        <FaFacebook />
       </div>
     </div>
   );

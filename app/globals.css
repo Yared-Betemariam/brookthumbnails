@@ -76,4 +76,8 @@
   .wrapper {
     @apply max-w-4xl mx-auto w-full px-4 md:px-6 lg:px-8;
   }
+
+  .squared {
+    @apply bg-square bg-center bg-repeat opacity-[7%];
+  }
 }

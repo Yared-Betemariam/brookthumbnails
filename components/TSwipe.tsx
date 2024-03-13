@@ -43,15 +43,20 @@ const TSwipe = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0.9 }}
-        className="overflow-x-auto bg-gray-100 rounded-md p-2 lg:p-4 flex flex-col gap-3"
+        className="overflow-x-auto bg-gray-100 rounded-md p-2 lg:p-4 flex flex-col gap-3 -z-10"
       >
-        <Image
-          alt="Thumbnail"
-          src={images[currentImage]}
-          width={1280}
-          height={720}
-          className="rounded-xl"
-        />
+        <div className={cn(roboto.className, "relative")}>
+          <Image
+            alt="Thumbnail"
+            src={images[currentImage]}
+            width={1280}
+            height={720}
+            className="rounded-xl"
+          />
+          <span className="bg-gray-900/90 rounded-md p-2 absolute bottom-2 right-2   lg:px-2 lg:py-1 text-sm lg:text-base text-gray-300/80 font-normal">
+            1:26
+          </span>
+        </div>
         <div className="flex gap-3">
           <Image
             alt="Brook"
@@ -95,7 +100,7 @@ const ButtonWrapper = ({
       whileHover={{ scale: 0.9 }}
       whileTap={{ scale: 1.2 }}
       onClick={onClick}
-      className="text-orange-100 hover:text-orange-300 transition text-4xl lg:text-6xl"
+      className="text-gray-900/70 bg-gray-300/90 p-1 lg:p-2 rounded-full transition text-2xl lg:text-4xl flex items-center justify-center"
     >
       {children}
     </motion.button>
